@@ -1,0 +1,109 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font: 16px/1.7 Arial, sans-serif;
+}
+
+.file-upload-section {
+    padding-top: 15px;
+}
+
+.upload-file input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    direction: ltr;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.button-section {
+    padding-top: 15px;
+}
+
+.photo-section {
+    padding-top: 15px;
+}
+
+.face {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: none;
+}
+
+.row {
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 -10px 20px;
+}
+
+    .row:before, .row:after {
+        content: " ";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+    }
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.face-img, .face-video {
+    position: absolute;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+}
+
+.photo-item .thumbnail {
+    position: relative;
+    width: 500px;
+}
+
+.preview-lg {
+    width: 263px;
+    height: 148px;
+    border: solid 1px #eee;
+}
+
+.img-preview {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.portraits {
+    position: absolute;
+    margin-top: -30px;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    z-index: 1;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.portrait {
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    margin: 0 2%;
+    border-radius: 100px;
+    border: 3px solid white;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
+    cursor: pointer;
+    -webkit-filter: sepia(40%);
+    filter: sepia(40%);
+}
